@@ -119,16 +119,11 @@ p {
   min-width: 0;
 }
 
-.brand__mark {
-  display: grid;
-  place-items: center;
-  width: 86px;
-  height: 44px;
-  background: var(--red);
-  color: #fff;
-  border-radius: var(--radius);
-  font-weight: 800;
-  letter-spacing: 0;
+.brand__logo {
+  width: 150px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .brand__text {
@@ -227,6 +222,21 @@ p {
 .hero__content {
   position: relative;
   padding: 120px 0 170px;
+}
+
+.hero__logo-card {
+  display: inline-flex;
+  width: min(420px, 100%);
+  margin-bottom: 22px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: var(--radius);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+.hero__logo-card img {
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
@@ -748,8 +758,8 @@ p {
     width: min(100% - 28px, 1180px);
   }
 
-  .brand__mark {
-    width: 72px;
+  .brand__logo {
+    width: 120px;
   }
 
   .brand__text span {
