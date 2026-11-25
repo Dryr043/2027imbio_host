@@ -500,7 +500,8 @@ p {
   gap: 18px;
 }
 
-.program-grid article {
+.program-grid article,
+.special-session {
   padding: 26px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: var(--radius);
@@ -521,6 +522,26 @@ p {
 
 .program-grid p {
   margin: 0;
+}
+
+.special-sessions {
+  margin-top: 44px;
+  scroll-margin-top: 100px;
+}
+
+.special-sessions h3,
+.special-session h4 {
+  margin: 0 0 16px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.special-session p {
+  max-width: 78ch;
+}
+
+.special-session p:last-child {
+  margin-bottom: 0;
 }
 
 .address-block {
